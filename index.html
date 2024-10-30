@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weed Leaderboard</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f0f0f0;
+        color: #333;
+        margin: 20px;
+        padding: 20px;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+      h1 {
+        text-align: center;
+        color: #007bff;
+      }
+      .leaderboard {
+        list-style-type: none;
+        padding: 0;
+      }
+      .leaderboard li {
+        background: #fff;
+        margin: 10px 0;
+        padding: 10px;
+        border-radius: 5px;
+        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Weed Leaderboard</h1>
+    <ul class="leaderboard">
+      ''') for index, (user, amount) in enumerate(sorted_users): if amount > 0:
+      f.write(f'
+      <li>{index + 1}) {user} ({amount})</li>
+      \n') f.write('''
+    </ul>
+  </body>
+</html>
